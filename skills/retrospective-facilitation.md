@@ -5,7 +5,7 @@ title: Retrospective Facilitation
 description: "Structures and analyses retrospective feedback"
 tags: [Tested]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
   - target: sprint-ceremony-playbook
     type: references

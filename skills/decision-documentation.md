@@ -5,7 +5,7 @@ title: Decision Documentation
 description: "Captures decisions with context, alternatives considered, and rationale"
 tags: []
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
   - target: decision-record-template
     type: references
