@@ -3,7 +3,7 @@ type: workflow
 id: retrospective-pipeline
 title: Retrospective Pipeline
 description: "Collects feedback, analyses themes, and produces action items"
-tags: [Draft]
+tags: [Production]
 connections:
   - target: retrospective-facilitation
     type: uses
@@ -52,7 +52,8 @@ Retrospective documentation containing:
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.brief}}` | Yes | Primary workflow brief or source content | `Paste a short brief describing the goal, audience, and constraints.` |
+| `{{input.team_feedback}}` | Yes | Raw team feedback from the retrospective | Paste the collected feedback — what went well, what didn't, ideas for improvement |
+| `{{input.sprint_name}}` | No | Sprint or iteration identifier | Sprint 14 |
 
 ## Outputs
 
@@ -79,6 +80,11 @@ Before running this workflow:
 To test this workflow immediately after import:
 
 ```
-Brief: "Paste a short brief describing the goal, audience, and constraints."
+Team feedback:
+- Went well: CI pipeline is much faster after the caching changes, pair programming sessions helped with knowledge sharing
+- Needs improvement: Too many meetings on Wednesday, code reviews taking 2+ days, unclear acceptance criteria on 3 stories
+- Ideas: Dedicated review slots each morning, template for acceptance criteria, async standups on meeting-heavy days
+
+Sprint name: Sprint 14
 ```
 

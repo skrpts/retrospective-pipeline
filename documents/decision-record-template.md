@@ -3,7 +3,7 @@ type: document
 id: decision-record-template
 title: Decision Record Template
 description: "Standard template for documenting project decisions"
-tags: []
+tags: [Production]
 connections: []
 ---
 

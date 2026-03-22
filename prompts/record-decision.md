@@ -3,7 +3,7 @@ type: prompt
 id: record-decision
 title: Record Decision
 description: "Core prompt for capturing decisions with full context"
-tags: []
+tags: [Production]
 connections:
   - target: decision-documentation
     type: derived_from
