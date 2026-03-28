@@ -15,6 +15,8 @@ connections:
     type: uses
   - target: decision-record-writer
     type: uses
+  - target: llm-service
+    type: runs_on
 ---
 
 ## Overview
