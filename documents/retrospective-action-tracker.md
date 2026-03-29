@@ -3,7 +3,7 @@ type: document
 id: retrospective-action-tracker
 title: Retrospective Action Tracker
 description: "Tracks action items arising from sprint retrospectives"
-tags: [Production, planning:sprint, communication:team]
+tags: [Production, Agile, Communication]
 connections: []
 ---
 

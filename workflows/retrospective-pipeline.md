@@ -3,7 +3,7 @@ type: workflow
 id: retrospective-pipeline
 title: Retrospective Pipeline
 description: "Collects feedback, analyses themes, and produces action items"
-tags: [Production, planning:sprint, communication:team]
+tags: [Production, Agile, Communication]
 connections:
   - target: retrospective-facilitation
     type: uses

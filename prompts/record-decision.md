@@ -3,7 +3,7 @@ type: prompt
 id: record-decision
 title: Record Decision
 description: "Core prompt for capturing decisions with full context"
-tags: [Production, planning:sprint, writing:product, communication:team]
+tags: [Production, Agile, Strategy]
 connections:
   - target: decision-documentation
     type: derived_from

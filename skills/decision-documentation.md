@@ -3,7 +3,7 @@ type: skill
 id: decision-documentation
 title: Decision Documentation
 description: "Captures decisions with context, alternatives considered, and rationale"
-tags: [Production, planning:sprint, communication:team]
+tags: [Production, Agile, Documentation]
 connections:
   - target: llm-service
     type: runs_on
