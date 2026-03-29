@@ -3,7 +3,7 @@ id: "dd5bcf01-e6c6-48a8-a9f1-209989e6ae79"
 name: "retrospective-pipeline"
 display_name: "Retrospective Pipeline"
 description: "Collects feedback, analyses themes, and produces action items"
-version: "1.4.0"
+version: "1.0.0"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -30,11 +30,11 @@ requires:
 
 # --- Contents ---
 contents:
-  skills: 2
-  prompts: 3
+  skills: 3
+  prompts: 4
   workflows: 1
   services: 1
   sources: 0
   documents: 3
   assets: 0
-  total: 10
+  total: 12
