@@ -3,7 +3,7 @@ type: prompt
 id: facilitate-retrospective
 title: Facilitate Retrospective
 description: "Core prompt for structuring and analysing retrospective feedback"
-tags: [Production]
+tags: [Production, planning:sprint, communication:team]
 connections:
   - target: retrospective-facilitation
     type: derived_from

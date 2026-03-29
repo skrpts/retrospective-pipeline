@@ -3,7 +3,7 @@ type: prompt
 id: decision-record-writer
 title: Decision Record Writer
 description: "Task prompt for producing formal decision records"
-tags: [Production]
+tags: [Production, planning:sprint, writing:product, communication:team]
 connections:
   - target: decision-documentation
     type: derived_from

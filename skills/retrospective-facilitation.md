@@ -3,7 +3,7 @@ type: skill
 id: retrospective-facilitation
 title: Retrospective Facilitation
 description: "Structures and analyses retrospective feedback"
-tags: [Tested]
+tags: [Tested, planning:sprint, communication:team]
 connections:
   - target: llm-service
     type: runs_on
