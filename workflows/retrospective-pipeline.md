@@ -21,6 +21,8 @@ connections:
     type: uses
   - target: llm-service
     type: runs_on
+  - target: retrospective-action-tracker
+    type: references
 ---
 
 ## Overview
