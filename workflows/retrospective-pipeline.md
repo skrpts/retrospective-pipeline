@@ -11,14 +11,6 @@ connections:
     type: uses
   - target: action-item-extraction
     type: uses
-  - target: facilitate-retrospective
-    type: uses
-  - target: record-decision
-    type: uses
-  - target: decision-record-writer
-    type: uses
-  - target: extract-action-items
-    type: uses
   - target: llm-service
     type: runs_on
   - target: retrospective-action-tracker
