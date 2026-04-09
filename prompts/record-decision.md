@@ -19,4 +19,4 @@ You are a technical writer specialising in decision documentation. Given the fol
 
 ### Inputs
 
-- **Retrospective analysis:** {{steps.facilitate-retrospective.output}}
+- **Retrospective analysis:** {{steps.Retrospective Facilitation.output}}

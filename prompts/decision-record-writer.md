@@ -19,5 +19,5 @@ Write a formal decision record for the following decision made during the retros
 
 ### Inputs
 
-- **Retrospective analysis:** {{steps.facilitate-retrospective.output}}
-- **Decision context:** {{steps.record-decision.output}}
+- **Retrospective analysis:** {{steps.Retrospective Facilitation.output}}
+- **Decision context:** {{steps.Decision Documentation.output}}
