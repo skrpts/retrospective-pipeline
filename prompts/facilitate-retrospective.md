@@ -4,6 +4,19 @@ id: facilitate-retrospective
 title: Facilitate Retrospective
 description: "Core prompt for structuring and analysing retrospective feedback"
 tags: [Production, Agile, Communication]
+inputs:
+  team_feedback:
+    label: "Team Feedback"
+    description: "Feedback collected from the team"
+    example: "Retro notes, survey results, or 1:1 feedback themes"
+    required: true
+    type: text
+  sprint_name:
+    label: "Sprint Name"
+    description: "Name or identifier for the sprint"
+    example: "Sprint 14 — Auth Hardening"
+    required: true
+    type: text
 connections:
   - target: retrospective-facilitation
     type: derived_from
