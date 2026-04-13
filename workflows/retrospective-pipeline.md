@@ -20,10 +20,8 @@ execution:
     step_type: "synthesis"
   - skill: "decision-documentation"
     step_type: "synthesis"
-    input_from: "retrospective-facilitation"
   - skill: "action-item-extraction"
     step_type: "synthesis"
-    input_from: "decision-documentation"
 ---
 
 ## Overview
