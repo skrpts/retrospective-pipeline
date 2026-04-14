@@ -15,6 +15,11 @@ connections:
     type: runs_on
   - target: retrospective-action-tracker
     type: references
+output_step: "action-item-extraction"
+composite_steps:
+  - "retrospective-facilitation"
+  - "decision-documentation"
+  - "action-item-extraction"
 execution:
   - skill: "retrospective-facilitation"
     step_type: "synthesis"
