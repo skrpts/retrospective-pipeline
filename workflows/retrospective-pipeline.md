@@ -11,11 +11,13 @@ connections:
     type: uses
   - target: action-item-extraction
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: retrospective-action-tracker
     type: references
-output_step: "action-item-extraction"
+output_step: "language-polish"
 composite_steps:
   - "retrospective-facilitation"
   - "decision-documentation"
@@ -27,6 +29,8 @@ execution:
     step_type: "synthesis"
   - skill: "action-item-extraction"
     step_type: "synthesis"
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Overview
@@ -99,4 +103,3 @@ Team feedback:
 
 Sprint name: Sprint 14
 ```
-
