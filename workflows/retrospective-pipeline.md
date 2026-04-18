@@ -27,6 +27,7 @@ execution:
     step_type: "synthesis"
   - skill: "decision-documentation"
     step_type: "synthesis"
+    prompt: "record-decision"
   - skill: "action-item-extraction"
     step_type: "synthesis"
   - skill: "language-polish"
