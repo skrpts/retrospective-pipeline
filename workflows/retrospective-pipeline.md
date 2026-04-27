@@ -24,13 +24,16 @@ composite_steps:
   - "action-item-extraction"
 execution:
   - skill: "retrospective-facilitation"
+    prompt: "facilitate-retrospective"
     step_type: "synthesis"
   - skill: "decision-documentation"
     step_type: "synthesis"
     prompt: "record-decision"
   - skill: "action-item-extraction"
+    prompt: "extract-action-items"
     step_type: "synthesis"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
 ---
 
