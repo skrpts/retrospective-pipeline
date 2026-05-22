@@ -3,7 +3,7 @@ id: "dd5bcf01-e6c6-48a8-a9f1-209989e6ae79"
 name: "retrospective-pipeline"
 display_name: "Retrospective Pipeline"
 description: "Collects feedback, analyses themes, and produces action items"
-version: "1.1.20"
+version: "1.1.22"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -17,9 +17,9 @@ repository: "https://github.com/skrpts/retrospective-pipeline"
 # --- Discovery (Hub) ---
 category: "project-manager"
 tags:
-  - "retrospective"
   - "agile"
   - "improvement"
+  - "retrospective"
 
 # --- Security & Access ---
 requires:
