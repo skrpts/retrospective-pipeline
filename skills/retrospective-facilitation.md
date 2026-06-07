@@ -7,7 +7,7 @@ tags: [Tested, Agile, Communication]
 connections:
   - target: llm-service
     type: runs_on
-  - target: sprint-ceremony-playbook
+  - target: retro-playbook
     type: references
 ---
 
