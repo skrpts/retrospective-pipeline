@@ -26,15 +26,19 @@ execution:
   - skill: "retrospective-facilitation"
     prompt: "facilitate-retrospective"
     step_type: "synthesis"
+    output: { name: "retrospective", type: "text" }
   - skill: "decision-documentation"
     step_type: "synthesis"
     prompt: "record-decision"
+    output: { name: "decision_record", type: "text" }
   - skill: "action-item-extraction"
     prompt: "extract-action-items"
     step_type: "synthesis"
+    output: { name: "action_items", type: "list" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_report", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
