@@ -2,7 +2,7 @@
 type: skill
 id: retrospective-facilitation
 title: Retrospective Facilitation
-description: "Structures and analyses retrospective feedback"
+description: "Structures and analyzes retrospective feedback"
 tags: [Tested, Agile, Communication]
 connections:
   - target: llm-service
@@ -27,4 +27,4 @@ Team feedback (raw comments), previous retrospective action items, sprint metric
 
 ## Outputs
 
-Categorised feedback, identified themes, prioritised improvement areas, and draft action items
+Categorized feedback, identified themes, prioritized improvement areas, and draft action items

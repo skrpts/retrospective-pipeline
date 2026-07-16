@@ -2,7 +2,7 @@
 type: workflow
 id: retrospective-pipeline
 title: Retrospective Pipeline
-description: "Collects feedback, analyses themes, and produces action items"
+description: "Collects feedback, analyzes themes, and produces action items"
 tags: [Production, Agile, Communication]
 connections:
   - target: retrospective-facilitation
@@ -56,7 +56,7 @@ Invoke the **retrospective-facilitation** skill to structure and collect team fe
 
 ### Stage 2: Theme Analysis
 
-Invoke the **facilitate-retrospective** prompt to analyse collected feedback, identify recurring themes, and prioritise improvement areas.
+Invoke the **facilitate-retrospective** prompt to analyze collected feedback, identify recurring themes, and prioritize improvement areas.
 
 ### Stage 3: Decision Recording
 
@@ -70,9 +70,9 @@ Invoke the **decision-record-writer** prompt to produce formal decision records 
 
 Retrospective documentation containing:
 
-- Categorised feedback (what went well, what needs improvement)
+- Categorized feedback (what went well, what needs improvement)
 - Identified themes and patterns
-- Prioritised action items with owners
+- Prioritized action items with owners
 - Decision records with context and rationale
 
 ## Inputs
@@ -93,7 +93,7 @@ Retrospective documentation containing:
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

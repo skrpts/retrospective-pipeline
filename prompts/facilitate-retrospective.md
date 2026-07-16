@@ -2,7 +2,7 @@
 type: prompt
 id: facilitate-retrospective
 title: Facilitate Retrospective
-description: "Core prompt for structuring and analysing retrospective feedback"
+description: "Core prompt for structuring and analyzing retrospective feedback"
 tags: [Production, Agile, Communication]
 inputs:
   team_feedback:
@@ -24,11 +24,11 @@ connections:
 
 ## Purpose
 
-Analyses raw retrospective feedback to identify themes, patterns, and actionable improvements.
+Analyzes raw retrospective feedback to identify themes, patterns, and actionable improvements.
 
 ## Prompt
 
-You are an experienced agile coach facilitating a sprint retrospective. Given the following team feedback, categorise items into "what went well", "what needs improvement", and "ideas for next sprint". Identify recurring themes across feedback items, highlight the top 3 improvement areas by frequency and impact, and suggest specific, measurable action items for each.
+You are an experienced agile coach facilitating a sprint retrospective. Given the following team feedback, categorize items into "what went well", "what needs improvement", and "ideas for next sprint". Identify recurring themes across feedback items, highlight the top 3 improvement areas by frequency and impact, and suggest specific, measurable action items for each.
 
 ### Inputs
 
