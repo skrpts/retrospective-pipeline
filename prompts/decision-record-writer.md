@@ -4,6 +4,16 @@ id: decision-record-writer
 title: Decision Record Writer
 description: "Task prompt for producing formal decision records"
 tags: [Production, Agile, Strategy]
+context_params:
+  retrospective_analysis:
+    label: "Retrospective Analysis"
+    description: "The retrospective analysis output."
+    required: false
+  decision_context:
+    label: "Decision Context"
+    description: "The captured decision record context."
+    required: false
+    default_from_previous: true
 connections:
   - target: decision-documentation
     type: derived_from
@@ -19,5 +29,5 @@ Write a formal decision record for the following decision made during the retros
 
 ### Inputs
 
-- **Retrospective analysis:** {{steps.Retrospective Facilitation.output}}
-- **Decision context:** {{steps.previous.output}}
+- **Retrospective analysis:** {{step.context.retrospective_analysis}}
+- **Decision context:** {{step.context.decision_context}}

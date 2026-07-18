@@ -11,6 +11,8 @@ connections:
     type: uses
   - target: action-item-extraction
     type: uses
+  - target: decision-record-composition
+    type: uses
   - target: language-polish
     type: uses
   - target: llm-service
@@ -22,19 +24,31 @@ composite_steps:
   - "retrospective-facilitation"
   - "decision-documentation"
   - "action-item-extraction"
+  - "decision-record-composition"
 execution:
   - skill: "retrospective-facilitation"
     prompt: "facilitate-retrospective"
     step_type: "synthesis"
     output: { name: "retrospective", type: "text" }
-  - skill: "decision-documentation"
-    step_type: "synthesis"
-    prompt: "record-decision"
-    output: { name: "decision_record", type: "text" }
   - skill: "action-item-extraction"
     prompt: "extract-action-items"
     step_type: "synthesis"
     output: { name: "action_items", type: "list" }
+  - skill: "decision-documentation"
+    step_type: "synthesis"
+    prompt: "record-decision"
+    output: { name: "decision_record", type: "text" }
+  - skill: "decision-record-composition"
+    prompt: "decision-record-writer"
+    step_type: "synthesis"
+    output: { name: "decision_records", type: "text" }
+    bindings:
+      retrospective_analysis:
+        from_step: "Retrospective Facilitation"
+        field: output
+      decision_context:
+        from_step: "Decision Documentation"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
@@ -42,6 +56,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Decision Record Writer"
+        field: output
 ---
 
 ## Overview

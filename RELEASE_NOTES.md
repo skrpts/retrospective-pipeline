@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.27
+GH#863 (Wave 1, batch 4) — fix the intent/output mismatch where the promised deliverable was never produced (K-045). The bundle shipped the `decision-record-writer` prompt — the step that writes up the formal, archivable decision records the workflow promises — and the docs said to run it, but the `execution:` block never invoked it, so that deliverable was silently dropped. Added a **Decision Record Writer** step (backed by a new `decision-record-composition` skill so it is `from_step`-addressable) as the terminal synthesis step, ordered `Facilitate Retrospective → Extract Action Items → Record Decision → Decision Record Writer`. Rewired the writer's inputs from positional `{{steps.<Title>.output}}` refs to explicit `from_step` bindings via `context_params` (`retrospective_analysis` ← Facilitate Retrospective, `decision_context` ← Record Decision). Completed the tail: repinned `polish-language` 1.0.1→1.0.6 (the version exposing the bindable `source` slot) and bound `language-polish`'s `source` ← the Decision Record Writer output, so the `output_step` polishes the actual decision record rather than its positional previous. No new required inputs.
+
 ## v1.1.26
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 
