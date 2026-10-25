@@ -34,6 +34,10 @@ execution:
     prompt: "extract-action-items"
     step_type: "synthesis"
     output: { name: "action_items", type: "list" }
+    bindings:
+      source:
+        from_step: "Retrospective Facilitation"
+        field: output
   - skill: "decision-documentation"
     step_type: "synthesis"
     prompt: "record-decision"
