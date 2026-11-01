@@ -3,7 +3,7 @@ id: "dd5bcf01-e6c6-48a8-a9f1-209989e6ae79"
 name: "retrospective-pipeline"
 display_name: "Retrospective Pipeline"
 description: "Collects feedback, analyzes themes, and produces action items"
-version: "1.1.28"
+version: "1.1.29"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -67,7 +67,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-10-25T22:14:55.254Z"
+  scanned_at: "2026-11-01T19:25:37.361Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

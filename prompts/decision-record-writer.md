@@ -13,7 +13,6 @@ context_params:
     label: "Decision Context"
     description: "The captured decision record context."
     required: false
-    default_from_previous: true
 connections:
   - target: decision-documentation
     type: derived_from
